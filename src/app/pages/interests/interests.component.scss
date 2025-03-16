@@ -1,0 +1,58 @@
+.interest-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.interest-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(13, 110, 253, 0.1);
+  color: var(--primary-color);
+  margin-right: 20px;
+  flex-shrink: 0;
+  
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+.interest-content {
+  flex: 1;
+}
+
+.interest-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.interest-description {
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .interest-card {
+    flex-direction: column;
+  }
+  
+  .interest-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
